@@ -9,7 +9,7 @@ const app = express()
 
 const port=process.env.PORT || 3000;
 app.use(cors({
-    origin:process.env.MONGO_URL,
+    origin:process.env.BASE_URL,
     methods:['GET','POST','DELETE','OPTIONS'],
     allowedHeaders:['Content-Type','Authorization'],
     credentials:true,
